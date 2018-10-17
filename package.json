@@ -1,0 +1,26 @@
+{
+  "name": "sr_associates",
+  "version": "1.0.0",
+  "description": "simple webapp with email integration into it",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saiyah007/SR-Associates.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "saikumar github.com/saiyah007",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saiyah007/SR-Associates/issues"
+  },
+  "homepage": "https://github.com/saiyah007/SR-Associates#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
