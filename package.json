@@ -21,6 +21,7 @@
   "homepage": "https://github.com/saiyah007/SR-Associates#readme",
   "dependencies": {
     "ejs": "^2.6.1",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "googleapis": "^27.0.0"
   }
 }
