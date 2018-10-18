@@ -2,7 +2,8 @@ const nodemailer = require('nodemailer');
 var smtpTransport = require('nodemailer-smtp-transport');
 const xoauth2 = require('xoauth2');
 
-var transporter = nodemailer.createTransport(smtpTransport({
+
+exports.transporter = nodemailer.createTransport(smtpTransport({
     service: 'gmail',
     auth: {
         xoauth2: xoauth2.createXOAuth2Generator({
@@ -15,17 +16,18 @@ var transporter = nodemailer.createTransport(smtpTransport({
     }
 }));
 
+var from, subject, message;
 var mailOptions = {
-    from: 'sai kumar <saiyah007devtest@gmail.com>',
+    from: from,
     to: 'saiyah0007@gmail.com',
-    subject: 'test test',
-    text: 'Testing for the test'
+    subject: subject,
+    text: message
 }
 
-transporter.sendMail(mailOptions, function(err, res) {
+exports.transporter.sendMail(mailOptions, function(err, res) {
     if(err){
         console.log('Error' + err);
     } else {
         console.log('Email has been sent')
     }
-})
+});
