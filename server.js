@@ -1,5 +1,6 @@
 var http = require('http');
 const bodyParser = require('body-parser');
+const sendmail = require('./mail/sendmail');
 const express = require('express');
 
 const app = express();
