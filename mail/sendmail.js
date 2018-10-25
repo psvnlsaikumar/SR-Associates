@@ -19,7 +19,7 @@ exports.transporter = nodemailer.createTransport(smtpTransport({
 var from, subject, message;
 var mailOptions = {
     from: from,
-    to: 'saiyah0007@gmail.com',
+    to: 'bharathsunny39@gmail.com',
     subject: subject,
     text: message
 }
