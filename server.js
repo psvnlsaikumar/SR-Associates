@@ -6,6 +6,8 @@ const app = express();
 app.set('view engine', 'ejs');
 const PORT = process.env.PORT
 
+app.use(express.static("."));
+
 
 
 app.get('/', function(req, res){
