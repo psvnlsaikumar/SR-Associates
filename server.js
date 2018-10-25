@@ -7,6 +7,8 @@ const app = express();
 app.set('view engine', 'ejs');
 const PORT = process.env.PORT
 
+var urlencodedParser = app.use(bodyParser.urlencoded({ extended: false }))
+
 app.use(express.static("."));
 
 
