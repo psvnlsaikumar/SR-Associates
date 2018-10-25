@@ -4,6 +4,7 @@ const sendmail = require('./mail/sendmail');
 
 
 const app = express();
+var urlencodedParser = app.use(bodyParser.urlencoded({ extended: false }))
 
 app.set('view engine', 'ejs');
 // app.use('/assets', express.static(__dirname + 'assets'));
