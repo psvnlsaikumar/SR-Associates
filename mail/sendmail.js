@@ -24,6 +24,12 @@ var mailOptions = {
     text: message
 }
 
+if(mailOptions.from === "" || mailOptions.subject === "" || mailOptions.message === ""){
+    mailOptions.from = "Server";
+    mailOptions.subject = "Server has just started";
+    mailOptions.text = "The server has just started. Please check if the server is running now."
+}
+
 exports.transporter.sendMail(mailOptions, function(err, res) {
     if(err){
         console.log('Error' + err);
